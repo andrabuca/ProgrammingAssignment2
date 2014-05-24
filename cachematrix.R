@@ -1,4 +1,4 @@
-## This implementation of a matrix caches the inverse of the matrix at first
+## This is an implementation of a matrix which caches the inverse of the matrix at first
 
 
 ## assumes x is an invertible matrix
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(A = matrix()) {
 ## tries to use cached inverse of the matrix if available
 
 cacheSolve <- function(A, ...) {
-  ## Return a matrix that is the inverse of 'x'
+  ## a matrix that is the inverse of 'x' is returned
   inv = A$getinverse()
   if (!is.null(inv)) {
     message('getting cached data')
